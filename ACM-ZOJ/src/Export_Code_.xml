@@ -1,0 +1,751 @@
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<generator name="KaijuanStudio" url="http://kaijuan.madeinchn.cn" />
+
+
+<item id="509455">
+	<title><![CDATA[Stone6762在问题《ASCII码》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int count = scan.nextInt();
+			if(count<=0){
+				break;
+			}
+			int a;
+			for (int nl = 0; nl <count; nl++) {
+				a=scan.nextInt();
+				System.out.print((char)a);
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509464">
+	<title><![CDATA[Stone6762在问题《财务管理》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			double sum = 0;
+			for (int i = 0; i < 12; i++) {
+				sum += scan.nextDouble();
+			}
+			sum /= 12;
+			System.out.printf("￥%.2f\n", sum);
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509495">
+	<title><![CDATA[Stone6762在问题《词组缩写》中提交的代码]]></title>
+	<result><![CDATA[答案错误]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n=scan.nextInt();
+			String s=scan.nextLine();
+			for (int nl = 0; nl < n; nl++) {
+				String str=scan.nextLine();
+				String arr[]=str.split(" ");
+				String aim="";
+				for (int i = 0; i < arr.length; i++) {
+					aim+=arr[i].charAt(0);
+				}
+				System.out.println(aim.toUpperCase());
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509511">
+	<title><![CDATA[Stone6762在问题《词组缩写》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n=scan.nextInt();
+			String s=scan.nextLine();
+			for (int nl = 0; nl < n; nl++) {
+				String str=scan.nextLine();
+				String arr[]=str.split(" +");
+				String aim="";
+				for (int i = 0; i < arr.length; i++) {
+					aim+=arr[i].charAt(0);
+				}
+				System.out.println(aim.toUpperCase());
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509540">
+	<title><![CDATA[Stone6762在问题《墓碑上的字符》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n=scan.nextInt();
+			for (int nl = 0; nl < n; nl++) {
+				String s1=scan.next();
+				String s2=scan.next();
+				String aim=s1.substring(0, s1.length()/2)+s2+s1.substring(s1.length()/2, s1.length());
+				System.out.println(aim);
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509546">
+	<title><![CDATA[Stone6762在问题《墓碑上的字符》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			for (int nl = 0; nl < n; nl++) {
+				String s1 = scan.next();
+				String s2 = scan.next();
+				String aim = "";
+				for (int i = 0; i < s1.length(); i++) {
+					if (i == s1.length()/2) {
+						aim += s2;
+					}
+					aim += s1.charAt(i);
+				}
+				System.out.println(aim);
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509738">
+	<title><![CDATA[Stone6762在问题《奇偶位互换》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			for (int nl = 0; nl < n; nl++) {
+				String s1 = scan.next();
+				String aim = "";
+				for (int i = 0; i < s1.length(); i++) {
+					aim += s1.charAt(i + 1);
+					aim += s1.charAt(i);
+					i++;
+				}
+				System.out.println(aim);
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509746">
+	<title><![CDATA[Stone6762在问题《元音字母转换》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			for (int nl = 0; nl < n; nl++) {
+				String s1 = scan.next().toLowerCase();
+				s1 = s1.replaceAll("a", "A").replaceAll("e", "E")
+						.replaceAll("i", "I").replaceAll("o", "O")
+						.replaceAll("u", "U");
+				System.out.println(s1);
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509751">
+	<title><![CDATA[Stone6762在问题《元音字母转换》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			for (int nl = 0; nl < n; nl++) {
+				String s1 = scan.next().toLowerCase();
+				String aim="";
+				char c=' ';
+				for (int i = 0; i < s1.length(); i++) {
+					c=s1.charAt(i);
+					if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+						c-=32;
+					}
+					aim+=c;
+				}
+				System.out.println(aim);
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509754">
+	<title><![CDATA[Stone6762在问题《寻找独一无二的数》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			if(n==0){
+				break;
+			}
+			int sum=0;
+			for (int nl = 0; nl < n; nl++) {
+				sum^=scan.nextInt();
+			}
+			System.out.println(sum);
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509765">
+	<title><![CDATA[Stone6762在问题《寻找独一无二的数》中提交的代码]]></title>
+	<result><![CDATA[答案错误]]></result>
+	<source><![CDATA[#include<stdio.h>
+int main()
+{
+	int sum=0,n=0,t=0;
+	while(scanf("%d",&n)!=EOF){
+		while(n--)
+		{
+			scanf("%d",&t);
+			sum^=t;
+		}
+		printf("%d\n",sum);
+	}
+
+}]]></source>
+</item>
+<item id="509774">
+	<title><![CDATA[Stone6762在问题《寻找独一无二的数》中提交的代码]]></title>
+	<result><![CDATA[答案错误]]></result>
+	<source><![CDATA[#include<stdio.h>
+int main()
+{
+	int sum=0,n=0,t=0;
+	while(scanf("%d",&n)!=EOF){
+		if(!n){
+			break;
+		}
+		while(n--)
+		{
+			scanf("%d",&t);
+			sum^=t;
+		}
+		printf("%d\n",sum);
+	}
+
+}]]></source>
+</item>
+<item id="509781">
+	<title><![CDATA[Stone6762在问题《正方形字符串》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			for (int nl = 0; nl < n; nl++) {
+				int t=scan.nextInt();
+				String sings="";
+				for (int i = 0; i <t; i++) {
+					sings+="ACM";
+				}
+				for (int i = 0; i <t*3; i++) {
+					System.out.println(sings);
+				}
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509806">
+	<title><![CDATA[Stone6762在问题《字母概率》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			char aim = scan.next().toLowerCase().charAt(0);
+			String str = scan.next().toLowerCase();
+			int count = 0;
+			for (int i = 0; i < str.length(); i++) {
+				if (aim == str.charAt(i)) {
+					count++;
+				}
+			}
+			double result = (count*1.00) / str.length();
+			System.out.printf("%.5f", result);
+			System.out.println();
+		}
+	}
+}
+]]></source>
+
+<item id="509820">
+	<title><![CDATA[Stone6762在问题《讨厌的小数点》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			for (int nl = 0; nl < n; nl++) {
+				String str = scan.next();
+				int count = scan.nextInt();
+				int index = str.indexOf('.') + count;
+				if (index <str.length()) {
+					System.out.println(str.charAt(index));
+				} else {
+					System.out.println(0);
+				}
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509826">
+	<title><![CDATA[Stone6762在问题《晚餐》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			String aim = "";
+			for (int nl = 0, t = 0; nl < n; nl++) {
+				String temp = scan.next();
+				if (temp.equals("bowl") || temp.equals("knife")
+						|| temp.equals("fork") || temp.equals("chopsticks")) {
+					t++;
+					if (t == 1) {
+						aim += temp;
+						continue;
+					}
+					aim += " " + temp;
+				}
+			}
+			System.out.println(aim);
+		}
+	}
+}
+]]></source>
+</item>
+<item id="509838">
+	<title><![CDATA[Stone6762在问题《字符串的奇偶性》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			String str = scan.next();
+			if (str.equals("#")) {
+				break;
+			}
+			int count = 0;
+			for (int i = 0; i < str.length(); i++) {
+				if (str.charAt(i) == '1') {
+					count++;
+				}
+			}
+			char sings = str.charAt(str.length() - 1);
+			boolean fla = count % 2 == 0;
+			if ((!fla && sings == 'e') || (fla && sings == 'o')) {
+				str=str.replace(sings, '1');
+			} else {
+				str=str.replace(sings, '0');
+			}
+			System.out.println(str);
+		}
+	}
+}
+]]></source>
+</item>
+<item id="510994">
+	<title><![CDATA[Stone6762在问题《字符串反转》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int n = scan.nextInt();
+			String ts = scan.nextLine();
+			for (int nl = 0; nl < n; nl++) {
+				String aim = "";
+				String[] arr = scan.nextLine().split(" ");
+				for (int i = 0; i < arr.length; i++) {
+					String t = "";
+					for (int j = arr[i].length()-1; j >= 0; j--) {
+						t += arr[i].charAt(j);
+					}
+					arr[i] = t;
+				}
+				System.out.println(strArr2Str(arr, ' '));
+			}
+		}
+	}
+
+	/**
+	 * @Describe_将一个字符串数组变成一个字符串_两个字符串中间穿插上指定的字符
+	 * @Author_Stone6762
+	 * @param arr字符串数组
+	 * @param c中间想要插入的字符
+	 * @return
+	 */
+	private static String strArr2Str(String[] arr, char c) {
+		String aim = "";
+		for (int i = 0; i < arr.length; i++) {
+			if (i == 0) {
+				aim += arr[i];
+				continue;
+			}
+			aim += c + arr[i];
+		}
+
+		return aim;
+	}
+
+}
+]]></source>
+</item>
+<item id="511014">
+	<title><![CDATA[Stone6762在问题《分割排序》中提交的代码]]></title>
+	<result><![CDATA[答案错误]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			String str = scan.next().replaceAll("5", " ");
+			String temp[] = str.split(" +");
+			int[] arr = new int[temp.length];
+			for (int i = 0; i < arr.length; i++) {
+				arr[i] = Integer.parseInt(temp[i]);
+			}
+			chooseSort(arr);
+			System.out.println(arr2String(arr, " "));
+		}
+	}
+
+	private static void chooseSort(int[] arr) {
+		for (int i = 0; i < arr.length - 1; i++) {
+			int min = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[j] < arr[min]) {
+					min = j;
+				}
+			}
+			int temp = arr[i];
+			arr[i] = arr[min];
+			arr[min] = temp;
+		}
+	}
+
+	private static String arr2String(int[] arr, String signs) {
+		String aim = "";
+		for (int i = 0; i < arr.length; i++) {
+			if (i == 0) {
+				aim += arr[i];
+				continue;
+			}
+			aim += signs + arr[i];
+		}
+
+		return aim;
+	}
+}
+]]></source>
+</item>
+<item id="538579">
+	<title><![CDATA[Stone6762在问题《字符统计》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[
+import java.util.Scanner;
+
+/**
+ * @Title_Test.java
+ * @author_Stone6762
+ * @CreationTime_2014年10月20日 下午9:59:35
+ */
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			String str = scan.nextLine();
+			int big = 0, sma = 0, dige = 0, kong = 0;
+			for (int i = 0; i < str.length(); i++) {
+				char t = str.charAt(i);
+				if (Character.isDigit(t)) {
+					dige++;
+					continue;
+				}
+				if (Character.isUpperCase(t)) {
+					big++;
+					continue;
+				}
+				if (Character.isLowerCase(t)) {
+					sma++;
+					continue;
+				}
+				if (t == ' ') {
+					kong++;
+				}
+			}
+			System.out.println(big + " " + sma + " " + dige + " " + kong);
+
+		}
+	}
+}
+]]></source>
+</item>
+<item id="538669">
+	<title><![CDATA[Stone6762在问题《相对分子质量》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+/**
+ * @Title_Test.java
+ * @author_Stone6762
+ * @CreationTime_2014年10月20日 下午9:59:35
+ */
+public class Main {
+
+	public static int trans(char c) {
+		if (c == 'H' || c == 'h') {
+			return 1;
+		} else if (c == 'C' || c == 'c') {
+			return 12;
+
+		} else if (c == 'N' || c == 'n') {
+			return 14;
+
+		} else if (c == 'O' || c == 'o') {
+			return 16;
+
+		} else if (c == 'F' || c == 'f') {
+			return 19;
+
+		} else if (c == 'P' || c == 'p') {
+			return 31;
+
+		} else if (c == 'S' || c == 's') {
+			return 32;
+
+		} else if (c == 'K' || c == 'k') {
+			return 39;
+		}
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			int count = scan.nextInt();
+			for (int tls = 0; tls < count; tls++) {
+				String str = scan.next();
+				int sum = 0;
+				for (int i = 0; i < str.length(); i++) {
+					char t = str.charAt(i);
+					if (Character.isLetter(t)) {
+						sum += trans(t);
+						continue;
+					}
+					if (Character.isDigit(t)) {
+						int start = i;
+						while (i < str.length()&&Character.isDigit(str.charAt(i))) {
+							i++;
+						}
+						int num = Integer.valueOf(str.substring(start, i ));
+						sum += (num - 1) * trans(str.charAt(start - 1));
+						i--;
+					}
+				}
+				System.out.println(sum);
+			}
+		}
+	}
+}
+]]></source>
+</item>
+<item id="538707">
+	<title><![CDATA[Stone6762在问题《平均绩点》中提交的代码]]></title>
+	<result><![CDATA[正确]]></result>
+	<source><![CDATA[import java.util.Scanner;
+
+/**
+ * @Title_Test.java
+ * @author_Stone6762
+ */
+public class Main {
+
+	public static int trans(char c) {
+		if (c == 'A') {
+			return 4;
+		} else if (c == 'B') {
+			return 3;
+		} else if (c == 'C') {
+			return 2;
+		} else if (c == 'D') {
+			return 1;
+		} else if (c == 'F') {
+			return 0;
+		} else {
+			return -1;
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		while (scan.hasNext()) {
+			String str=scan.nextLine().trim();
+			String arr[]=str.split(" +");
+			double sum=0;
+			boolean flag=true;
+			for (int i = 0; i < arr.length; i++) {
+				int t=trans(arr[i].charAt(0));
+				if(t>=0){
+					sum+=t;
+				}else{
+					flag=false;
+					break;
+				}
+			}
+			if(flag){
+				System.out.printf("%.2f\n",sum/arr.length);
+			}else{
+				System.out.println("Unknown");
+			}
+		}
+	}
+}
+]]></source>
+</item>
+
+</root>
